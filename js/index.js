@@ -5,14 +5,14 @@ Vue.component("app-summary", {
         available: Boolean
     },
     template:
-        '<div><p>Name: {{ name }}<br />Experience: {{ experience }} years<br />Available? {{ available ? "Yes" : "No" }}</p></div>'
+        '<div><p>Name: {{ name }}<br />Age: {{ experience }} years<br />Available? {{ available ? "Yes" : "No" }}</p></div>'
 });
 
 new Vue({
     el: "#app",
     data: {
-        name: "David Hayden",
-        yearsExperience: 25,
+        name: "Thuyet Nguyen",
+        yearsExperience: 23,
         availableForHire: true
     }
 });
