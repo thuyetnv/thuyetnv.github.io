@@ -1,1 +1,42 @@
-<h3>THUYET TIEN SINH</h3>
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>WAMI-DEV</title>
+  
+  
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <div id="app">
+    <form>
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" v-model="name" id="name" class="form-control" placeholder="name">
+        </div>
+        <div class="form-group">
+            <label for="yearsExperience">Age</label>
+            <input type="number" v-model.number="yearsExperience" id="yearsExperience" class="form-control" placeholder="years experience">
+        </div>
+        <div class="checkbox">
+            <label>
+                <input type="checkbox" v-model="availableForHire" id="availableForHire"> Available for Hire
+            </label>
+        </div>
+    </form>
+    <hr />
+    <app-summary :name="name" :experience="yearsExperience" :available="availableForHire"></app-summary>
+</div>
+<script src='http://unpkg.com/vue'></script>  
+<script  src="js/index.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,7 @@
+#app {
+    max-width: 350px;
+    margin: 25px auto;
+}
+label {
+    font-weight: bold;
+}
